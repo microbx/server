@@ -1,0 +1,21 @@
+
+query AllLinks {
+    allLinks (
+        filter: {
+            OR: [
+                { url_contains: "npm" },
+                { description_contains: "Best" }
+            ]
+        }
+    ) {
+        url
+        description
+    }
+}
+
+{
+    allLinks(first: 2, skip: 1) {
+        url
+        description
+    }
+}

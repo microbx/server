@@ -1,0 +1,14 @@
+
+mutation CreateUser {
+    createUser (
+        name: "Test User",
+        authProvider: {
+            email: {
+                email: "foo@bar.com",
+                password: "foobar"
+            }
+        }
+    ) {
+        id
+    }
+}

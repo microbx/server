@@ -1,0 +1,11 @@
+
+mutation SignIn {
+    signinUser (
+        email: {
+            email: "foo@bar.com",
+            password: "foobar"
+        }
+    ) {
+        token
+    }
+}

@@ -1,0 +1,12 @@
+
+mutation CreateVote {
+    createVote(linkId: "59caa0e3cc43173f671d99c4") {
+        id
+        user {
+            name
+        }
+        link {
+            url
+        }
+    }
+}
