@@ -1,0 +1,27 @@
+
+# build output
+dist
+build
+
+# atom
+.atomignore
+
+# dependencies
+node_modules
+package-lock.json
+
+# logs
+*.log
+
+# yarn
+yarn-errors.log
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out
+.DS_Store
+
+.env
